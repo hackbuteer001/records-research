@@ -301,11 +301,11 @@ def count_conditional_prob_dpl(key_list, seqex_list, output_path, train_key_set=
 
     total_visit += 1
 
-  dx_probs = dict([(k, v / float(total_visit)) for k, v in dx_freqs.iteritems()])
-  proc_probs = dict([(k, v / float(total_visit)) for k, v in proc_freqs.iteritems()])
-  lab_probs = dict([(k, v / float(total_visit)) for k, v in lab_freqs.iteritems()])
-  dp_probs = dict([(k, v / float(total_visit)) for k, v in dp_freqs.iteritems()])
-  pl_probs = dict([(k, v / float(total_visit)) for k, v in pl_freqs.iteritems()])
+  dx_probs = dict([(k, v / float(total_visit)) for k, v in dx_freqs.items()])
+  proc_probs = dict([(k, v / float(total_visit)) for k, v in proc_freqs.items()])
+  lab_probs = dict([(k, v / float(total_visit)) for k, v in lab_freqs.items()])
+  dp_probs = dict([(k, v / float(total_visit)) for k, v in dp_freqs.items()])
+  pl_probs = dict([(k, v / float(total_visit)) for k, v in pl_freqs.items()])
 
   dp_cond_probs = {}
   pd_cond_probs = {}
